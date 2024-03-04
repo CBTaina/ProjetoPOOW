@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HTML com CSS</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        /* Estilos para a barra de navegação */
+        .navbar {
+            background-color: transparent;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%; /* Define a largura máxima para a barra de navegação */
+            margin-left: auto; /* Alinha a barra de navegação à direita */
+            margin-right: auto; /* Alinha a barra de navegação à esquerda */
+        }
+
+        .navbar-logo {
+            float: left;
+        }
+
+        .navbar-logo img {
+            height: 50px; /* Ajuste a altura conforme necessário */
+            width: auto; /* Isso permite que a largura se ajuste automaticamente à altura especificada */
+        }
+
+        .navbar-links {
+            float: right;
+        }
+
+
+        .navbar-links a {
+            color: black;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+
+        /* Estilos para o conteúdo */
+        .content {
+            padding: 20px;
+            min-height: calc(100vh - 150px); /* Ajusta a altura mínima do conteúdo para preencher o espaço entre a navbar e o footer */
+        }
+
+        /* Estilos para o rodapé */
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center; /* Centraliza as colunas horizontalmente */
+            align-items: center; /* Centraliza as colunas verticalmente */
+            text-align: center; /* Centraliza o texto dentro das colunas */
+            padding: 5% 10% 0 10%; /* Define o padding para cima, direita e baixo como 0, e mantém o padding da esquerda indefinido */
+            height: auto; /* Altura automática para ajustar ao conteúdo */
+            background: linear-gradient(183deg, #67C3F3 0%, #5A98F2 100%);
+            color: white;
+            text-align: left;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .column:first-child {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .description,
+        .copyright {
+            margin-bottom: 20px;
+        }
+
+        .links .title {
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: 600;
+
+        }
+
+        .links .item {
+            margin-bottom: 10px;
+            font-weight: 100;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-logo">
+        <img src="assets/images/logo.png" alt="Logo">
+    </div>
+    <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#">Find a doctor</a>
+        <a href="#">Apps</a>
+        <a href="#">Testimonials</a>
+        <a href="#">About us</a>
+    </div>
+</div>
+
+<div class="content">
+    <h2>Conteúdo Principal</h2>
+    <p>Este é um exemplo básico de estrutura HTML com CSS, incluindo uma barra de navegação, conteúdo e um rodapé.</p>
+</div>
+
+<footer class="footer">
+    <div class="column">
+        <div class="logo">
+            <img src="assets/images/Logo%20branca.png.png" alt="Logo">
+        </div>
+        <div class="description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</div>
+        <div class="copyright">©Trafalgar PTY LTD 2020. All rights reserved</div>
+    </div>
+    <div class="column">
+        <div class="links">
+            <div class="title">Company</div>
+            <div class="item">About</div>
+            <div class="item">Testimonials</div>
+            <div class="item">Find a doctor</div>
+            <div class="item">Apps</div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="links">
+            <div class="title">Region</div>
+            <div class="item">Indonesia</div>
+            <div class="item">Singapore</div>
+            <div class="item">Hongkong</div>
+            <div class="item">Canada</div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="links">
+            <div class="title">Help</div>
+            <div class="item">Help center</div>
+            <div class="item">Contact support</div>
+            <div class="item">Instructions</div>
+            <div class="item">How it works</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
