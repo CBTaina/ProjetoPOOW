@@ -3,101 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de HTML com CSS</title>
-
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-            font-family: 'Mulish', sans-serif;
-        }
-
-        /* Estilos para a barra de navegação */
-        .navbar {
-            background-color: transparent;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 100%; /* Define a largura máxima para a barra de navegação */
-            margin-left: auto; /* Alinha a barra de navegação à direita */
-            margin-right: auto; /* Alinha a barra de navegação à esquerda */
-        }
-
-        .navbar-logo {
-            float: left;
-        }
-
-        .navbar-logo img {
-            height: 50px; /* Ajuste a altura conforme necessário */
-            width: auto; /* Isso permite que a largura se ajuste automaticamente à altura especificada */
-        }
-
-        .navbar-links {
-            float: right;
-        }
-
-
-        .navbar-links a {
-            color: black;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-
-        /* Estilos para o conteúdo */
-        .content {
-            padding: 20px;
-            min-height: calc(100vh - 150px); /* Ajusta a altura mínima do conteúdo para preencher o espaço entre a navbar e o footer */
-        }
-
-        /* Estilos para o rodapé */
-        .footer {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            justify-content: center; /* Centraliza as colunas horizontalmente */
-            align-items: center; /* Centraliza as colunas verticalmente */
-            text-align: center; /* Centraliza o texto dentro das colunas */
-            padding: 5% 10% 0 10%; /* Define o padding para cima, direita e baixo como 0, e mantém o padding da esquerda indefinido */
-            height: auto; /* Altura automática para ajustar ao conteúdo */
-            background: linear-gradient(183deg, #67C3F3 0%, #5A98F2 100%);
-            color: white;
-            text-align: left;
-            font-family: 'Mulish', sans-serif;
-        }
-
-        .column {
-            flex: 1;
-            padding: 20px;
-        }
-        .column:first-child {
-            flex: 2;
-            padding: 30px;
-        }
-
-        .logo img {
-            height: 50px;
-            width: auto;
-        }
-
-        .description,
-        .copyright {
-            margin-bottom: 20px;
-        }
-
-        .links .title {
-            margin-bottom: 20px;
-            font-size: 25px;
-            font-weight: 600;
-
-        }
-
-        .links .item {
-            margin-bottom: 10px;
-            font-weight: 100;
-            font-size: 20px;
-        }
-    </style>
+    <title>Tralfagar</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
 
@@ -115,8 +22,67 @@
 </div>
 
 <div class="content">
-    <h2>Conteúdo Principal</h2>
-    <p>Este é um exemplo básico de estrutura HTML com CSS, incluindo uma barra de navegação, conteúdo e um rodapé.</p>
+    <div class="HeaderText">
+        <div class="HeaderContent">
+            <h1 class="HeaderTitle">Virtual healthcare <br>for you</h1>
+            <p class="HeaderSubtitle">Trafalgar provides progressive, and affordable <br>healthcare, accessible on
+                mobile and online <br>for everyone</p>
+            <div class="ConsultBtn">
+                <a href="#" class="ConsultButton">Consult today</a>
+            </div>
+        </div>
+        <img class="HeaderIllustration" src="assets/images/imagem1.png" alt="Header Illustration">
+    </div>
+
+</div>
+<div class="container">
+    <div class="Services">
+        <div class="Card">
+            <img src="assets/images/busca.png" alt="Search Doctor">
+            <h2>Search Doctor</h2>
+            <p>Choose your doctor from thousands of specialists, general, and trusted hospitals</p>
+        </div>
+        <div class="Card">
+            <img src="assets/images/frasco.png" alt="Consultation">
+            <h2>Consultation</h2>
+            <p>Free consultation with our trusted doctors and get the best recommendations</p>
+        </div>
+        <!-- Adicione os outros cards aqui -->
+        <div class="Card">
+            <img src="assets/images/consulta.png" alt="Consultation">
+            <h2>Consultation</h2>
+            <p>Free consultation with our trusted doctors and get the best recommendations</p>
+        </div>
+        <div class="Card">
+            <img src="assets/images/ficha.png" alt="Consultation">
+            <h2>Consultation</h2>
+            <p>Free consultation with our trusted doctors and get the best recommendations</p>
+        </div>
+        <div class="Card">
+            <img src="assets/images/remedio.png" alt="Consultation">
+            <h2>Consultation</h2>
+            <p>Free consultation with our trusted doctors and get the best recommendations</p>
+        </div>
+        <div class="Card">
+            <img src="assets/images/documento.png" alt="Consultation">
+            <h2>Consultation</h2>
+            <p>Free consultation with our trusted doctors and get the best recommendations</p>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="LeadingHealthcareProviders" >
+        <img class="TrafalgarIllustrationSec021" src="assets/images/imagem3.png" alt="Trafalgar Illustration">
+        <div class="Text">
+            <div class="LeadingHealthcareProvidersTitle">Leading healthcare providers</div>
+            <div class="LeadingHealthcareProvidersDescription">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver.</div>
+            <div class="Btn">
+                <button class="LearnMore">Learn more</button>
+            </div>
+
+        </div>
+    </div>
+
 </div>
 
 <footer class="footer">
@@ -124,7 +90,9 @@
         <div class="logo">
             <img src="assets/images/Logo%20branca.png.png" alt="Logo">
         </div>
-        <div class="description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</div>
+        <div class="description">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and
+            online for everyone
+        </div>
         <div class="copyright">©Trafalgar PTY LTD 2020. All rights reserved</div>
     </div>
     <div class="column">
